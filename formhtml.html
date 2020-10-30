@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Mahasiswa</title>
+    <style>
+        #card {
+        height: 740px;
+        width: 800px;
+        margin: 0 auto;
+        }
+        .right{
+            margin-left: auto;
+            margin-right: 0px;
+        }
+    </style>
+</head>
+<body>
+	<div id="card">
+		<form action="formsuccess.html" method="POST">
+			<header style="color: cadetblue; font-family: sans-serif;">
+				<h1>Form Registrasi Mahasiswa</h1>
+			</header>
+			<br><br>
+        </table>
+        <br/><br/>
+        <h2 style="font-family: sans-serif;">INFORMASI PERSONAL</h2>
+        <hr>
+        <table>
+    <table>
+    	<tr>
+    	    <td valign="top">Nama Lengkap</td>
+			<td><input type="text" name="nama" placeholder="Nama lengkap" style="width: 400px;" required>
+			</td>
+		</tr>
+		<tr>
+    	    <td valign="top">Email</td>
+			<td><input type="email" name="email" placeholder="Masukan email" style="width: 400px;" required>
+			</td>
+    	</tr>
+    	<tr>
+            <td valign="top">Password</td>
+			<td><input type="password" name="password" placeholder="Password" style="width: 400px;" required>
+			</td>
+		<tr>
+				<td valign="top">Agama</td>
+				<td>
+					<input type="radio" name="islam">Islam
+					<input type="radio" name="kristen">Kristen
+					<input type="radio" name="hindu">Hindu
+					<input type="radio" name="budha">budha
+					<input type="radio" name="konghucu">Konghucu
+				</td>
+		</tr>
+		<tr>
+			<td valign="top">No.Telepon</td>
+			<td><input type="number" name="Telepon" placeholder="Telepon" value="" style="width: 400px;" required>
+			</td>
+		</tr>
+    	</tr>
+    	<tr>
+    	    <td valign="top">Jenis Kelamin</td>
+    	    <td>
+    	    	<input type="radio" name="l">Pria<br />
+    	    	<input type="radio" name="p">Perempuan
+    	    </td>
+    	</tr>
+    	<tr>
+    	    <td><label>Tanggal Lahir</label></td>
+				<td><input type="date" name="tanggal lahir"></td>
+		</tr>
+    	<tr>
+    	    <td valign="top">Negara</td>
+			<td><input type="text" name="negara" placeholder="Negara tempat tinggal">
+			</td>
+    	</tr>
+    	<tr>
+    	    <td valign="top">Kota</td>
+    	    <td>
+    	        <select>
+    	    <option>Jakarta</option>
+		    <option>Bogor</option>
+		    <option>Bekasi</option>
+		    <option>Tangerang</option>
+			<option>Depok</option>
+			<option>Demak</option>
+		    <option>Gorontalo</option>
+		    <option>Yogyakarta</option>
+		    <option>Surabaya</option>
+		    <option>Jambi</option>
+			<option>Bandung</option>
+			<option>Banyumas</option>
+			<option>Boyolali</option>
+			<option>Cilacap</option>
+		    <option>Cimahi</option>
+			<option>Cirebon</option>
+			<option>Ciamis</option>
+			<option>Cianjur</option>
+		    <option>Sukabumi</option>
+			<option>Lainnya....</option>
+    	        </select>
+    	    </td>
+    	</tr>
+    	<tr>
+    	    <td valign="top">Alamat Lengkap</td>
+    	    <td><textarea placeholder="isilah alamat lengkap anda" cols="48" rows="5"></textarea></td>
+		</tr>
+	</table>
+	<br/>
+	<h2 style="font-family: sans-serif;">ASAL SEKOLAH</h2>
+	<hr/>
+	<table>
+		<tr>
+    	    <td valign="top">Nama Sekolah</td>
+			<td><input type="text" name="sekolah" placeholder="Nama sekolah asal" style="width: 200px;" required>
+			</td>
+		</tr>
+		<tr>
+    	    <td valign="top">Jurusan</td>
+			<td><input type="text" name="jurusan" placeholder="Jurusan" style="width: 100px;" required>
+			</td>
+		</tr>
+		<tr>
+    	    <td valign="top">Nilai Ujian Nasional</td>
+			<td><input type="text" name="nilai" placeholder="Nilai UN" style="width: 100px;" required>
+			</td>
+		</tr>
+	</table>
+	<br/>
+	<h2 style="font-family: sans-serif;">PILIH PROGRAM STUDI</h2>
+	<hr/>
+	<table>
+		<tr>
+    	    <td valign="top">Program Studi</td>
+    	    <td>
+    	    	<input type="radio" name="ti">Teknik Informatika
+    	    	<input type="radio" name="si">Sistem Informasi
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">Semester</td>
+    	    <td>
+    	    	<input type="radio" name="1">1
+				<input type="radio" name="2">2
+				<input type="radio" name="3">3
+				<input type="radio" name="4">4
+    	    </td>
+		</tr>
+ 		<tr>
+			<td colspan="2" type="center">
+				<input type="submit" value="Proses" style="color: blue;">
+				<input type="reset" value="Batal">
+    	</tr>
+    </table>
+</body>
+</html>
